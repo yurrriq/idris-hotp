@@ -1,7 +1,7 @@
 IDRIS := idris
 PKG   := hotp
 
-.PHONY: build clean clean-all install rebuild doc doc-clean
+.PHONY: build clean clean-all install rebuild doc doc-clean lib
 
 build:
 	@$(IDRIS) --build $(PKG).ipkg
@@ -28,7 +28,5 @@ doc-clean:
 hotp: src/Main.idr
 	@idris -i src -i target/release src/Main.idr -o hotp
 
-lib: target/release/libhotp.a
-
-target/release/libhotp.a: src/lib.rs src/hotp.h
+lib: src/lib.rs src/hotp.h
 	@cargo build --release

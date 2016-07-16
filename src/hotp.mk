@@ -1,12 +1,13 @@
-LIB = target/release/libhotp.a
+LIB = target/release/libhotp.dylib
+# LIB = target/release/libhotp.a
 
-.PHONY: all clean
+.PHONY: all clean $(LIB)
 
-all: libhotp.a
+all: $(LIB)
 
 clean:
-	@rm -f libhotp.a
+	@rm -f *.a *.dylib
 
-libhotp.a:
-	@make -C .. $(LIB)
+$(LIB):
+	@make -C .. lib
 	@cp ../$(LIB) .

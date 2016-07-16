@@ -5,9 +5,9 @@ authors = ["Eric Bailey <eric@ericb.me>"]
 
 [dependencies]
 libc        = "0.2.14"
-# rust-crypto = "^0.2"
+rust-crypto = "^0.2"
 
 [lib]
 name = "hotp"
-crate_type = ["staticlib"]
-# crate_type = ["dylib"]
+# crate_type = ["staticlib"]
+crate_type = ["dylib"]
