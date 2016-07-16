@@ -1,0 +1,19 @@
+#+OPTIONS: ':nil *:t -:t ::t <:t H:3 \n:nil ^:t arch:headline author:t c:nil
+#+OPTIONS: creator:nil d:(not "LOGBOOK") date:t e:t email:nil f:t inline:t
+#+OPTIONS: num:t p:nil pri:nil prop:nil stat:t tags:t tasks:t tex:t timestamp:t
+#+OPTIONS: title:t toc:t todo:t |:t
+#+TITLE: HOTP
+#+DATE: [2016-07-16 Sat]
+#+AUTHOR: Eric Bailey
+#+EMAIL: eric@ericb.me
+#+LANGUAGE: en
+#+SELECT_TAGS: export
+#+EXCLUDE_TAGS: noexport
+#+CREATOR: Emacs 25.0.95.1 (Org mode 8.3.4)
+
+* HOTP
+[[https://github.com/idris-lang/Idris-dev][Idris]] implementation of /HOTP: An HMAC-Based One-Time Password Algorithm/ ([[https://tools.ietf.org/html/rfc4226][RFC
+4226]]).
+
+* License
+[[https://yurrriq.mit-license.org][The MIT License (MIT)]]
