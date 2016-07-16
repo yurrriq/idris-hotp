@@ -1,2 +1,7 @@
 *.ibc
 *.o
+target
+Cargo.lock
+hotp
+*.a
+hotp_doc/

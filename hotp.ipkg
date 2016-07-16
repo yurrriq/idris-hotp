@@ -1,0 +1,16 @@
+package hotp
+
+modules   = Main
+
+brief     = "Idris implementation of HOTP (RFC 4226)"
+version   = "0.1.0"
+readme    = "README.org"
+license   = "MIT"
+author    = "Eric Bailey <eric@ericb.me>"
+homepage  = "https://github.com/yurrriq/idris-hotp"
+
+sourcedir  = src
+executable = hotp
+main       = Main
+makefile   = hotp.mk
+objs       = hotp.h, libhotp.a
